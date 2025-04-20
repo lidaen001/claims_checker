@@ -148,7 +148,7 @@ def process_docx(filepath):
         logger.error(f"处理DOCX文件时出错: {str(e)}")
         raise Exception(f"处理文件时出错: {str(e)}")
 
-def analyze_claims(markdown_text, api_key, base_url="https://ark.cn-beijing.volces.com/api/v3", model="doubao-1.5-pro-256k-250115", debug=True):
+def analyze_claims(markdown_text, api_key, base_url="https://ark.cn-beijing.volces.com/api/v3", model="doubao-1.5-pro-256k-250115", debug=False):
     """
     使用DeepSeek API分析权利要求
 
