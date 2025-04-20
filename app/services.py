@@ -148,7 +148,7 @@ def process_docx(filepath):
         logger.error(f"处理DOCX文件时出错: {str(e)}")
         raise Exception(f"处理文件时出错: {str(e)}")
 
-def analyze_claims(markdown_text, api_key, base_url="https://ark.cn-beijing.volces.com/api/v3", model="doubao-1.5-pro-256k-250115", debug=False):
+def analyze_claims(markdown_text, api_key, base_url="https://ark.cn-beijing.volces.com/api/v3", model="doubao-1-5-pro-256k-250115", debug=False):
     """
     使用DeepSeek API分析权利要求
 
@@ -156,7 +156,7 @@ def analyze_claims(markdown_text, api_key, base_url="https://ark.cn-beijing.volc
         markdown_text (str): 要分析的markdown文本
         api_key (str): DeepSeek API密钥
         base_url (str): API的基础URL，默认为"https://ark.cn-beijing.volces.com/api/v3"
-        model (str): 使用的模型，默认为"doubao-1.5-pro-256k-250115"
+        model (str): 使用的模型，默认为"doubao-1-5-pro-256k-250115"
         debug (bool): 是否开启调试模式，开启后会保存中间文件
     """
     try:
